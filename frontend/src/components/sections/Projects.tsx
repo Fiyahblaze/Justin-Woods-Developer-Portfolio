@@ -26,6 +26,7 @@ function Projects() {
       <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         <ProjectCard
           title="ToolShare"
+          image="/images/toolshare.png"
           description="A community tool-sharing application where owners manage listings and borrowers request tools. Includes authentication and a dashboard for managing listings and requests."
           technologies={[
             'React',
@@ -39,6 +40,7 @@ function Projects() {
 
         <ProjectCard
           title="IP Address Tracker"
+          image="/images/ip-tracker.png"
           description="An application that looks up IP address information and displays its approximate location on an interactive map."
           technologies={['React', 'TypeScript', 'Leaflet', 'IPify API']}
           githubUrl="https://github.com/Fiyahblaze/Project-IP-Tracker-React-Development"
@@ -46,6 +48,7 @@ function Projects() {
 
         <ProjectCard
           title="Zenith Product API"
+          image="/images/zenith-api.png"
           description="A RESTful product API supporting create, read, update, and delete operations, with filtering, sorting, and pagination."
           technologies={['JavaScript', 'Node.js', 'Express', 'MongoDB']}
           githubUrl="https://github.com/Fiyahblaze/SBA-13-Integrating-A-Database-Build-A-Product-API"
