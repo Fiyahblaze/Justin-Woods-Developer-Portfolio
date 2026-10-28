@@ -13,16 +13,34 @@ function Navbar() {
         </a>
 
         <div className="flex flex-wrap items-center gap-5 text-sm text-slate-300">
-          <a href="#projects" className="transition-colors hover:text-teal-400">
+          <a
+            href="#projects"
+            className="transition-colors hover:text-teal-400"
+          >
             Work
           </a>
 
-          <a href="#about" className="transition-colors hover:text-teal-400">
+          <a
+            href="#about"
+            className="transition-colors hover:text-teal-400"
+          >
             About
           </a>
 
-          <a href="#skills" className="transition-colors hover:text-teal-400">
+          <a
+            href="#skills"
+            className="transition-colors hover:text-teal-400"
+          >
             Skills
+          </a>
+
+          <a
+            href="/resume/Justin-Woods-Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-teal-400"
+          >
+            Résumé
           </a>
 
           <a
