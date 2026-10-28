@@ -39,6 +39,8 @@ function Hero() {
             className="rounded-lg border border-slate-600 px-6 py-3 font-semibold text-white transition-colors hover:border-teal-400 hover:text-teal-400"
           >
             Visit GitHub
+            </a>
+
             <a
                href="/resume/Justin-Woods-Resume.pdf"
                download
@@ -46,7 +48,6 @@ function Hero() {
             >
               Download Résumé
              </a>
-          </a>
         </div>
       </div>
 
