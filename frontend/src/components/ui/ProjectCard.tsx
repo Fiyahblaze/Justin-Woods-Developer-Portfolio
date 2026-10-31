@@ -1,4 +1,5 @@
 type ProjectCardProps = {
+  id: string
   title: string
   description: string
   technologies: string[]
@@ -8,6 +9,7 @@ type ProjectCardProps = {
 }
 
 function ProjectCard({
+  id,
   title,
   description,
   technologies,
@@ -16,18 +18,27 @@ function ProjectCard({
   liveUrl,
 }: ProjectCardProps) {
   return (
-    <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 transition-colors hover:border-teal-400/50">
+    <article
+      id={id}
+      aria-labelledby={`${id}-heading`}
+      className="flex h-full scroll-mt-8 flex-col overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 transition-colors hover:border-teal-400/50"
+    >
       <img
         src={image}
         alt={`${title} project concept illustration`}
         width={1536}
         height={1024}
         loading="lazy"
-        className="aspect-[3/2] w-full object-cover"
+        className="block aspect-[3/2] w-full object-cover"
       />
 
       <div className="flex flex-1 flex-col p-6">
-        <h3 className="text-2xl font-semibold text-white">{title}</h3>
+        <h3
+          id={`${id}-heading`}
+          className="text-2xl font-semibold text-white"
+        >
+          {title}
+        </h3>
 
         <p className="mt-4 leading-relaxed text-slate-300">
           {description}
